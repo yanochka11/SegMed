@@ -1,0 +1,2 @@
+Link to download segmentation dataset:
+https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation/download?datasetVersionNumber=2
