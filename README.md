@@ -4,13 +4,14 @@
 Welcome to our SegMed project repository! This project focuses on automating brain tumor segmentation using advanced deep learning techniques, aiming to improve clinical decisions and treatment strategies.
 
 ## Table of Contents
-
-- [Project Overview](#project-overview)
+- [Project Overview](#Project-Overview)
 - [Team Members](#team-members)
-- [Project File Structure](#project-file-structure)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Project File Structure](#Project-File-Structure)
+- [Installation and Usage](#installation-and-usage)
 - [Code Snippets](#code-snippets)
+- [Statistics Model Comparison](#statistics-model-comparison)
+- [Reference Repository](#reference-repository)
+- [Conclusion](#conclusion)
 
 ## Project Overview
 
@@ -33,12 +34,18 @@ SegMed/
 ├── weights/
 │   └── instructions.txt
 ├── dataset/
-│   └── download_link.txt
+│   ├── download_link.txt
+│   └── load_dataset_instructions
 ├── notebooks/
-│   ├── GAFL.py
+│   ├── SAM_and_SAM_plus_GAFL.ipynb
 │   ├── SAM_Milestone.ipynb
 │   ├── Segmentation_Baseline_Models.ipynb
-│   └── featup_example.ipynb
+│   └── SAM_and_SAM_plus_Featup.ipynb
+├── results/
+│   ├── SAM_Milestone_results
+│   ├── SAM_General_results
+│   ├── FeatUp_SAM_results
+│   └── GAFL_SAM_results
 ├── README.md
 └── requirements.txt
 ```
@@ -59,8 +66,7 @@ SAM_Milestone.ipynb: Train the MedSAM model.
 Downloading and Preparing Datasets
 To download and prepare the datasets, follow the instructions in dataset/download_link.txt.
 
-Using Pre-trained Weights
-Download the best saved model weights using the instructions in weights/instructions.txt and place them in the appropriate directory.
+### dataset loading 
 ```
 ## Code Snippets
 Download Segmentation Dataset
@@ -76,7 +82,13 @@ uploaded = files.upload()
 !kaggle datasets download -d mateuszbuda/lgg-mri-segmentation -p /content
 !unzip /content/lgg-mri-segmentation.zip -d /content/dataset
 ```
-## Load Models
+### Load Models
 ## Make Segmentation Prediction
+## Statistics Model Comparison
 ## Conclusion
+## Reference Repository
+- Segment anything: https://www.nature.com/articles/s41467-024-44824-z
+- FeatUp: https://github.com/mhamilton723/FeatUp
+- GAFL: https://github.com/cviaai/GAFL
+
 In our quest to automate brain tumor segmentation through deep learning, we've made significant strides by deploying and assessing a range of foundational models such as DeepLabV3+, U-Net, U-Net++, DeepLabV3, and Pyramid Attention Network (PAN). Building on this foundation, we've taken a significant step forward by integrating the SAM model into our framework. After training it for 5 epochs, we've observed encouraging initial results, achieving a mean loss of 0.0054 and a Mean Intersection over Union (IoU) of 0.644. Moving forward, we plan to enhance our MedSAM model and incorporate advanced technologies like FeatUp and GAFL. This integration aims to refine feature resolution and optimize frequency content, respectively, further boosting our model's performance.
