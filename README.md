@@ -1,4 +1,4 @@
-![alt text](![Unknown](https://github.com/yanochka11/SegMed/assets/49607311/8963742d-adb0-4221-a28f-1405c98f0d60)
+![Unknown](https://github.com/yanochka11/SegMed/assets/49607311/8963742d-adb0-4221-a28f-1405c98f0d60
 
 # SegMed: Implementation of MedSAM Segmentation and Enhancement with FeatUp and GAFL
 
