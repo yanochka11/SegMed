@@ -1,3 +1,5 @@
+![alt text](https://github.com/yanochka11/SegMed/issues/2#issue-2323767466)
+
 # SegMed: Implementation of MedSAM Segmentation and Enhancement with FeatUp and GAFL
 
 
