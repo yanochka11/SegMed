@@ -115,7 +115,6 @@ os.chdir("FeatUp/")
 
 ```
 
-## Statistics Model Comparison
 ## Reference Repository
 - Segment anything: https://www.nature.com/articles/s41467-024-44824-z
 - FeatUp: https://github.com/mhamilton723/FeatUp
